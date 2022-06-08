@@ -64,13 +64,13 @@ class App extends React.Component {
             <h1 className="font-light">McDogalds Menu Items Manager</h1>
             <div className="row">
               <div className="d-grid gap-2  my-3">
-                  <button className="btn btn-outline-primary" id="addPanelToggle">Add</button>
-                  <button className="btn btn-outline-primary" id="updatePanelToggle">Update</button>
+                  <button className="btn btn-outline-primary" id="addPanelToggle" data-bs-toggle="collapse" href="#addPanel"  aria-expanded="false" aria-controls="addPanel">Add</button>
+                  <button className="btn btn-outline-primary" id="updatePanelToggle" data-bs-toggle="collapse" href="#updatePanel">Update</button>
                   <button className="btn btn-outline-primary" id="deleteButton">Delete</button>
 
               </div>
                 
-                <div className="col-12">
+                <div id="addPanel" className="col-12">
                   <AddPanel></AddPanel>
 
                 </div>
